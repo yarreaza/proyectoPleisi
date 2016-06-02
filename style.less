@@ -1,0 +1,519 @@
+
+/* Pixels */
+@0: 0;
+@1: 1px;
+@2: 2px;
+@3: 3px;
+@4: 4px;
+@5: 5px;
+@6: 6px;
+@7: 7px;
+/* Pixels */
+@0: 0;
+@1: 1px;
+@2: 2px;
+@3: 3px;
+@4: 4px;
+@5: 5px;
+@6: 6px;
+@7: 7px;
+@8: 8px;
+@9: 9px;
+@10: (@5 + @5);
+@15: (@10 + @5);
+@20: (@10 + @10);
+@25: (@20 + @5);
+@30: (@15 + @15);
+@35: (@30 + @5);
+@40: (@30 + @10);
+@45: (@40 + @5);
+@50: (@40 + @10);
+@55: (@50 + @5);
+@60: (@50 + @10);
+@65: (@60 + @5);
+@70: (@60 + @10);
+@75: (@70 + @5);
+@80: (@70 + @10);
+@85: (@80 + @5);
+@90: (@80 + @10);
+@95: (@90 + @5);
+@100: (@90 + @10);
+@200: (@100 + @100);
+@300: (@200 + @100);
+@400: (@300 + @100);
+@500: (@400 + @100);
+@600: (@500 + @100);
+
+/* Colors */
+@negro:#000000;
+@grisOscuro: #272727;
+@blanco: #FFFFFF;
+@grisTexto: #383838;
+@rojoPpal: #9D080C;
+@grisSub: #928D8D;
+@grisTextoFooter: #ADADAD;
+@verde:  #00B2BB;
+@naranja: #F15A24;
+@azul: #182e40;
+@azulTitu: #1C3243;
+@grisFondo: #F2F2F2;
+@grisSombra: #C7C6C6;
+
+
+/* Class */
+.no-margin{margin: 0;}
+.no-margint{margin-top: @0 !important;}
+.no-marginb{margin-bottom: @0 !important;}
+.margint5{margin-top: (@5) !important;}
+.margint10{margin-top: (@10) !important;}
+.margint15{margin-top: (@15) !important;}
+.margint20{margin-top: (@20) !important;}
+.margint25{margin-top: (@25) !important;}
+.margint30{margin-top: (@30) !important;}
+.margint40{margin-top: @30 + @10 !important;}
+.margint50{margin-top: @40 + @10 !important;}
+.margint60{margin-top: @50 + @10 !important;}
+.margint100{margin-top: @50 + @50 !important;}
+.margint180{margin-top: (@100 + @80) !important;}
+.marginb5{margin-bottom: (@5) !important;}
+.marginb10{margin-bottom: (@10) !important;}
+.marginb15{margin-bottom: (@15) !important;}
+.marginb20{margin-bottom: (@20) !important;}
+.marginb25{margin-bottom: (@25) !important;}
+.marginb30{margin-bottom: (@30) !important;}
+.marginb40{margin-bottom: (@40)!important;}
+.marginb50{margin-bottom: (@50)!important;}
+.marginb60{margin-bottom: (@60)!important;}
+.marginb70{margin-bottom: (@70)!important;}
+.marginb100{margin-bottom: @50 + @50 !important;}
+.no-padding{padding: @0!important;}
+.no-paddingt{padding-top: @0 !important;}
+.no-paddingb{padding-bottom: @0 !important;}
+.no-paddingl{padding-left: @0 !important;}
+.no-paddingr{padding-right: @0 !important;}
+.paddingt5{padding-top: (@5) !important;}
+.paddingt10{padding-top: (@10) !important;}
+.paddingt15{padding-top: (@15) !important;}
+.paddingt20{padding-top: (@20) !important;}
+.paddingt25{padding-top: (@25) !important;}
+.paddingt30{padding-top: (@30) !important;}
+.paddingb5{padding-bottom: (@5) !important;}
+.paddingb10{padding-bottom: (@10) !important;}
+.paddingb15{padding-bottom: (@15) !important;}
+.paddingb20{padding-bottom: (@20) !important;}
+.paddingb25{padding-bottom: (@25) !important;}
+.paddingb30{padding-bottom: (@30) !important;}
+.paddingb40{padding-bottom: (@40) !important;}
+
+.paddingb100 {padding-bottom: (@40 + @40 + @20) !important;}
+.marginr30{margin-right: @30 !important;}
+
+.marginAuto {
+  margin: auto !important;
+}
+
+.textRight {
+  text-align: right !important;
+}
+
+.textCenter {
+  text-align: center !important;
+}
+
+/*::::Fuesntes: Roboto y Merriweather:::::*/
+body {
+background: @blanco;
+  height: 100%;
+  font-size: (@15 + @1) !important;
+  color: @grisTexto;
+  font-family: 'SourceSansPro', sans-serif !important;
+  padding-right: none !important;
+}
+
+section {
+  position: relative;
+  background: #fff;
+  z-index: 10;
+}
+
+
+footer {
+    background: @azul;
+    color: @blanco;
+    padding-top: @80;
+    padding-bottom: (@60);
+    font-size: (@10 + @4);
+    //margin-top: (@600);
+    position: relative;
+}
+
+footer h3 {
+  padding: 0;
+  margin: 0;
+  color: @blanco;
+  font-size: (@10 + @4);
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: @20;
+}
+
+footer .categorias, footer .sociales, footer .pleisi {
+  list-style: none;
+  padding: 0;
+}
+
+footer .categorias li a, footer .sociales li a, footer .pleisi li a {
+  list-style: none;
+  color: @blanco;
+  font-weight: 600;
+  text-decoration: none !important;
+}
+
+.btn-default, .btn-default:hover  {
+  color: @blanco !important; 
+  background: @naranja !important;
+  border-radius: 0 !important;
+  border-color: @naranja !important;
+
+}
+
+.form-control {
+  border-radius: @0 !important;
+  border: none !important
+}
+.derechoAutor {
+  background: @verde;
+  text-align: center;
+  color: @blanco;
+  font-size: (@15 + @1) !important;
+}
+.derechoAutor h3 {
+  font-size: (@15 + @1);
+  font-weight: 600;
+}
+
+.sociales li a {
+  float: left;
+}
+
+.fondoHome {
+  background-image: url(images/unas.jpg);
+  background-repeat: no-repeat;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  margin-bottom: (@100 + @100 + @100);
+  top: @0; 
+}
+.fondoHome h2, .fondoHome h3 {
+  padding-top: (@100 + @200);
+  text-align: center;
+  color: @blanco;
+}
+.fondoHome h3 {
+  padding-top: @0 !important;
+  font-size: (@90 + @5)!important;
+}
+
+.navbar-brand, .navbar-nav>li>a {
+  text-shadow: none !important;
+}
+
+/*=====================================================*/
+/*::::::::::::::Inicio menú principal::::::::::::::::::*/
+/*=====================================================*/
+.navbar {
+  position: absolute!important;
+  z-index: 999 !important;
+  width: 100% !important;
+  text-align: right !important !important;
+  height: @100 !important;
+    background: transparent !important;
+  border: none !important; 
+  margin-top: @25;
+}
+.navbar i {
+  margin-right: @5;
+  font-size: @25;
+}
+.nav {
+  margin-top: @20 !important;
+  float: right !important; 
+}
+.navbar-default .navbar-nav>li>a {
+  color: @blanco !important;
+  font-weight: 600 !important;
+}
+.navbar-default .navbar-nav>li>a:hover {
+  color: @verde !important;
+  font-weight: 600 !important;
+}
+.navbar-default {
+  box-shadow: inset @0 @0 @0 rgba(255,255,255,.15),0 @0 @0 rgba(0,0,0,.075) !important;
+}
+.navbar-toggle {
+  background: transparent !important;
+}
+.navbar-toggle:hover {
+  background: transparent !important;
+}
+.suscribir a {
+  background: @naranja;
+}
+.suscribir a:hover {
+  background: @verde !important;
+  color: @blanco !important;
+}
+.navbar-default .navbar-nav>li>a:hover {
+  color: @blanco !important;
+}
+/*=====================================================*/
+/*:::::::::::::::::Fin menú principal::::::::::::::::::*/
+/*=====================================================*/
+.nuestrosAliados{
+  position: relative;
+  z-index: 5;
+}
+
+.banner-info{
+  padding: 160px 0;
+}
+
+.descripAliados h3 {
+  font-family: 'Pacifico', cursive !important;
+  color: @blanco !important;
+  font-size: @50 !important;
+}
+
+.mask {
+   background: rgba(0,0,0,.6);
+   position:  absolute;
+   width: 100%;
+   height: 100%;
+   top:@0;
+   left:@0;
+}
+
+.encima {
+  z-index: 9999999;
+}
+
+.verCursos  {
+  color: @blanco;
+  font-size:  (@20 + @4);
+  font-weight: 100;
+  text-align: center;
+  background: @verde;
+  width: 20%;
+  margin: auto;
+  padding: @10;
+}
+
+.verCursos:hover   {
+  background: @naranja;
+} 
+
+.verCursos a, .verCursos a:hover {
+  font-size: @20 !important;
+  color: @blanco !important;
+  text-decoration: none !important;
+  font-weight: 700;    
+}
+
+.descripBanner h3 {
+  font-family: 'Pacifico', cursive !important;
+  color: @blanco !important;
+  font-size: @50 !important;
+  text-align: center;
+}
+
+.descripBanner h2 {
+  font-size: (@20 + @4);
+  color: @blanco;
+  text-align: center;
+}
+
+/*===================================*/
+/*:::::Inicio cursos destacados::::::*/
+/*===================================*/
+
+.tituPpal h3 {
+  margin-top: @70;
+  margin-bottom: @70;
+  font-weight: 600;
+  color: @azulTitu;
+  font-size: (@40 + @5) !important;
+  font-family: 'Pacifico', cursive !important;
+  text-align: center;
+}
+
+.blogCursos {
+    color: #343434;
+    padding: 0px 20px 0px 20px !important;
+    font-size: 14px;
+}
+
+ .blogCursos span, .notiLateral span{
+    text-transform: uppercase;
+    font-weight: normal;
+    color: #9C9A9A;
+}
+
+.blogCursos h3, .notiLateral h3{
+  font-size: (@20 + @3);
+  color: @negro;
+}
+
+.blogCursos h3 a {
+    color: #182E40;
+    font-size: (@20 + @4);
+    font-weight: 700;
+}
+
+.blogCursos h3 a:hover {
+  text-decoration: none;
+}
+
+.boton, 
+.boton:hover {
+  background: @azul;
+  padding: @10;
+  color: @blanco;
+  text-decoration: none;
+  float: right;
+}
+
+.blogCursos:active:before {
+   background-color: #719518;
+}
+
+.imgcurso1 {
+  width: 100%;
+}
+
+#cursosDestacados {
+  background: @grisFondo;
+}
+
+.sombra {
+  box-shadow: @5 @5 @5 @grisSombra;
+}
+
+.hvr-float {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+.hvr-float:hover, .hvr-float:focus, .hvr-float:active {
+  -webkit-transform: translateY(-8px);
+  transform: translateY(-8px);
+}
+
+.blogCursos i{
+    font-size: (@20 + @4);
+    margin-right: @10;
+}
+.blogCursos p {
+  color: @azulTitu !important;
+}
+.verTodos, .verTodos:hover {
+    background: @naranja;
+    padding: @15 @30 @15 @30;
+    margin-bottom: 100;
+    color: @blanco !important;
+    font-size: (@20 + @4);
+    text-decoration: none !important;
+    font-weight: 600;
+    text-align: center;
+    margin: auto;
+}
+.verTodos:hover {
+    background: @verde !important;
+}
+/*===================================*/
+/*:::::::Fin cursos destacados::::::*/
+/*===================================*/
+
+
+/*========================================*/
+/*:::::::Inicio cómo funciona Pleisi::::::*/
+/*========================================*/
+video {
+  width: 100%
+}
+
+.texto {
+  font-size: (@20 + @5);
+  color: #989696;
+  font-weight: 400;
+  line-height: 1;
+  text-align: center;
+}
+
+.contenido p {
+  font-size: @20;
+  text-align: left !important;
+}
+
+.video-controls {
+  width: 100%;
+  cursor: pointer;
+  background-color: @blanco;
+  height: 390px !important;
+}
+
+/*========================================*/
+/*::::::::::Fin cómo funciona Pleisi::::::*/
+/*========================================*/
+#alumnas {
+  margin-top:(@600 + @100);
+}
+ .alumna {
+  border-top: @10 solid @verde;
+ }
+
+ .alumna h2 {
+  text-align: center;
+  color: @verde;
+  font-size: (@20 + @4);
+ }
+ .alumna h3 {
+    font-size: (@15 + @3);
+    font-style: italic;
+    color: @azul;
+ }
+ .alumna h4 {
+    color: @grisTextoFooter;
+ }
+   
+/*:::::::::::::::::::::::::::::::::::::::::::*/
+/*::::::Inicio estilos versión teléfonos:::::*/
+/*:::::::::::::::::::::::::::::::::::::::::::*/
+@media (max-width:767px) {
+  .navbar img {margin-top: -@20;}
+
+  .descripAliados h3 {font-size: @40 !important;}
+
+  .descripAliados h2 {font-size: @20 !important;}
+
+  .verCursos{min-width: 150px;}
+
+  .verCursos a {font-size:  18px !important;}
+
+  .fondoHome h3 {font-size: (@40 + @5) !important;}
+}
+/*::::::::::::::::::::::::::::::::::::::::*/
+/*::::::Fin estilos versión teléfonos:::::*/
+/*::::::::::::::::::::::::::::::::::::::::*/
